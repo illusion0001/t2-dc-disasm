@@ -287,7 +287,7 @@ void DumpState(SsState* pState)
 #ifdef WANTS_TABS
 	printf("\t(state (\"%s\")\n", StringIdToStringInternal(pState->m_stateId));
 #else
-	printf("    (state (\"%s\")\n", StringIdToStringInternal(pState->m_stateId));
+	printf("    (state (\"%s\")\n", StringIdToStringInternal(pState->m_stateId))
 #endif
 	int64_t maxBlocks = pState->m_numSsOnBlocks;
 	for (int32_t iBlocks = 0; iBlocks < maxBlocks; iBlocks++)
