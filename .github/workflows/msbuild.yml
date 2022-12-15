@@ -26,7 +26,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         path: |
-          sid1/sidbase.bin
+          **/sid1/sidbase.bin
           x64/**/*.exe
           x64/**/*.pdb
 
