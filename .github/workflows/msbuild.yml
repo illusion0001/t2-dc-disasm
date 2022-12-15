@@ -20,7 +20,7 @@ jobs:
       uses: microsoft/setup-msbuild@v1.1.3
 
     - name: Build
-      run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} /U:WANT_TABS ${{env.SOLUTION_FILE_PATH}}
+      run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} /u[WANT_TABS] ${{env.SOLUTION_FILE_PATH}}
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
